@@ -1,2 +1,2 @@
 # learn-cplusplus
-a console application to develop C++ basics
+hey, bharat this side. i love coding in c++ and has made many projects in c++ during my schooling days. thos LEARN CPLUSPLUS is one of my favourites. it's an console application to develop your C++ basics. It has a user login screen to choose your username password and level. Accordingly you will see C++ functions, datatypes, tokens, etc. Go through the practice block to learn and then practice your knowledge with intuititve games.
