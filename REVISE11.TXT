@@ -1,0 +1,151 @@
+C++ TOKENS
+
+*keyword: special words identified by the compiler which cannot be used as an 
+         identifier in a program.Eg-void,main,int,char,etc.
+
+*alphabet set: A to Z,a to z or 0-9
+
+*Special Symbols: +-*/%< >^=
+
+*identifier: name Given to userdefined variables,functions,structures,etc.
+
+*constants: \n-new line
+         \t- spaces
+         \a- bell sound
+
+______________________________________________________________________
+
+DATA TYPES
+
+*char : range(-128 to 127) size(1 byte)
+
+*int : range(-32678 to 32677) size(1 byte)
+
+*unsigned int : range(0 to 65535) size(1 byte)
+
+*unsigned char : range(0 to 255) size(1 byte)
+
+*long : size(4 bytes)
+
+*float : size(4 bytes)
+
+*double: size(8 bytes)
+
+*long double: size(10 bytes)
+
+______________________________________________________________________
+
+Basic Header Files
+
+*iostream 
+->cout: used to give output to the console
+->cin: used to get input from console
+
+*conio
+->clrscr(): used to clear data from screen
+->getch(): used to bring a pause to program by inputing a character from 
+         console
+
+*math
+->pow(): used to raise an integer to some power
+->sqrt(): used to get square root of a positive integer
+->fabs(): used to get absolute value of an integer
+
+*string
+->strrev():used to reverse a string
+->strcmpi():used to compare 2 string ignoring case sensitivity
+->stcpy():used to copy characters of a source string to destination string
+->strlen():used to get length of a string
+
+*ctype
+->isupper():to check if the alphabet is uppercase
+->islower():to check if the alphabet is lowercase
+->toupper():to convert an alphabet to uppercase
+->tolower():to convert an alphabet to lowercase
+
+______________________________________________________________________
+
+CONDITIONAL  EXPRESSION
+
+->(conditional expression)?true statement:false statement;
+______________________________________________________________________
+
+INCREMENT OPERATOR
+
+-> ++a; (prefix):first increament and then use
+-> a++;(postfix):first use and then increament
+______________________________________________________________________
+COMMENT
+
+->single line: //this is a comment
+
+->multi line:  /*this
+               is a
+               comment*/
+
+______________________________________________________________________
+CONTROL  STRUCTURES
+
+*Selection/Branching Structures
+->if and else: if(condition)
+               {true statement;}
+                else
+               {false statement;}
+
+->switch:  switch(variable)
+           {case <constant expression>:
+           default;
+           }
+
+*JUMP  STATEMENTS
+->break
+->goto <identifier>
+
+
+*ITERATION
+
+->for loop: for(initilization;condition;updation
+           {body;}
+->while loop:  initialization;
+            while(condition)
+           {body;updation;}
+->do while: do
+          {body;updation;}
+            while(condition);
+
+______________________________________________________________________
+TYPEDEF
+
+*Example typedef  ch[400];
+*now ch is a user defined data type;
+* ch str; // str is a string of 400 characters
+
+______________________________________________________________________
+ARRAY
+
+*A list/group of objects of the same data type
+*can be 1D
+*Example: int n[20];  //an array of 20 integers
+*can be 2D
+*Example: int n[20][20];  // an array of 400 integers
+
+STRING
+
+*a specific case of arrays
+* an array of characters only
+*Example:  char ch[40];  // array of 40 characters
+
+______________________________________________________________________
+STRUCTURE
+
+*structure is a user defined Data Structure consisting of multiple variables 
+of various data types.
+*syntax:
+      struct  <name>
+      {data members;
+        data functions;
+       }
+*All data members and data functions are PUBLIC by default,i.e
+ accessible to all others members of the program.
+
+FOR FURTHER NOTES MAKE A NEW CLASS 12 ACCOUNT.

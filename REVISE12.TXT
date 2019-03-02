@@ -1,0 +1,216 @@
+DATA TYPES
+
+*char : range(-128 to 127) size(1 byte)
+
+*int : range(-32678 to 32677) size(1 byte)
+
+*unsigned int : range(0 to 65535) size(1 byte)
+
+*unsigned char : range(0 to 255) size(1 byte)
+
+*long : size(4 bytes)
+
+*float : size(4 bytes)
+
+*double: size(8 bytes)
+
+*long double: size(10 bytes)
+
+______________________________________________________________________
+
+Basic Header Files
+
+*fstream 
+->cout: used to give output to the console
+->cin: used to get input from console
+->read():used to read data from a binary file
+->write():used to write data to a binary file
+
+*conio
+->clrscr(): used to clear data from screen
+->getch(): used to bring a pause to program by inputing a character from 
+         console
+
+*math
+->pow(): used to raise an integer to some power
+->sqrt(): used to get square root of a positive integer
+->fabs(): used to get absolute value of an integer
+
+*string
+->strrev():used to reverse a string
+->strcmpi():used to compare 2 string ignoring case sensitivity
+->stcpy():used to copy characters of a source string to destination string
+->strlen():used to get length of a string
+
+*ctype
+->isupper():to check if the alphabet is uppercase
+->islower():to check if the alphabet is lowercase
+->toupper():to convert an alphabet to uppercase
+->tolower():to convert an alphabet to lowercase
+
+*iomanip
+->setw()
+
+*stdlib
+->random():used to produce random numbers in a particular range
+->exit(): to exit run of a program
+->atoi():to convert a string to integer
+->itoa():to convert an integer to string
+
+*stdio
+->gets():used to input a string from console with spaces
+->puts():used to display a string to the console
+->getline():used to input a line in string
+
+*dos
+->delay():used to delay the execution of a program by milliseconds
+->sleep():used to stop processing of a program by seconds
+
+______________________________________________________________________
+
+
+ARRAY
+
+*A list/group of objects of the same data type
+*can be 1D
+*Example: int n[20];  //an array of 20 integers
+*can be 2D
+*Example: int n[20][20];  // an array of 400 integers
+
+STRING
+
+*a specific case of arrays
+* an array of characters only
+*Example:  char ch[40];  // array of 40 characters
+
+______________________________________________________________________
+
+CLASS
+
+*Class is a user defined Data Structure consisting of multiple variables 
+of various data types.
+*syntax:
+      class  <name>
+      {data members;
+        public:
+        data functions;
+       }
+*All data members and data functions are PRIVATE by default,i.e
+ inaccessible by all others members of the program.
+
+ACCESSOR FUNCTION
+*used to access private data members of the class
+*example: char* retname()
+       {return name;}
+
+MUTATOR  FUNCTION
+*used to assign values to private data members of the class from 
+the values send as parameters
+*example:  void setmarks(int n)
+            {marks=n;}
+
+______________________________________________________________________
+
+CONSTRUCTORS
+*used to assign memory(data) to object of a class
+*name same as name of class
+*no return type
+*always in public segment of class
+
+DEFAULT CONSTRUCTOR
+*invoked at the time of initialization of an object of the
+class:  stud s;
+*example:  class stud()
+            {int n;
+             public:
+             stud()
+             {n=5;}
+             };
+
+COPY CONSTRUCTOR
+*invoked at the time of initialization of an object of the
+class:  stud s(t);
+*example:  class stud()
+            {int n;
+             public:
+             stud(stud& p)
+             {n=p.n;}
+             };             
+
+
+PARAMETERIZED CONSTRUCTOR
+*invoked at the time of initialization of an object of the
+class:  stud s(4);
+*example:  class stud()
+            {int n;
+             public:
+             stud(int x)
+             {n=x;}
+             };
+______________________________________________________________________
+
+INHERITANCE
+*multilevel:  class A; class B:public A; class C:public B
+*multiple:  class A; class B; class C:public B,public C
+*heirarchial:  class A; class B:public A; class C:public A
+*HYBRID:  class A; class B:public A; class C:public A; class D:public B,public C;
+
+______________________________________________________________________
+
+FILE HANDLING
+
+TEXT FILE
+*read
+
+->ifstream fin("nameoffile.txt");
+   while(!fin.eof())
+    fin.get(ch);                    //ch is a character
+    fin.close();
+
+*write
+
+->ofstream fout("nameoffile.txt");
+    fout<<ch;                     
+    fout.close();            
+
+BINARY FILE
+*read
+
+->ifstream fin("nameoffile.bin",ios::binary);
+   fin.read((char*)&ch,sizeof(ch));                    //ch is a string here
+    fin.close();
+
+*write
+
+->ofstream fout("nameoffile.bin",ios::binary);
+    fout.write((char*)&ch,sizeof(ch));                     
+    fout.close();                         
+
+______________________________________________________________________
+
+FILE POINTERS
+
+*seekg()
+->used to set pointer of a file to any particular position while
+reading data from a file;
+->modes: ios::beg|ios::cur|ios::end
+->fin.seekg(integer,mode);
+
+*seekp()
+->used to set pointer of a file to any particular position while
+writing data to a file;
+->modes: ios::beg|ios::cur|ios::end
+->fout.seekp(integer,mode);
+
+*tellg()
+->used to get location of file pointer while reading data from
+the file.
+-> int n=fin.tellg();
+
+*tellp()
+->used to get location of file pointer while writing data to
+the file.
+-> int n=fout.tellp();
+______________________________________________________________________
+
+FOR NOTES ON PREVIOUS TOPICS MAKE A NEW CLASS 11 ACCOUNT.

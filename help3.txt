@@ -1,0 +1,11 @@
+DECODER
+
+*Taking reference from the ORIGINAL WRONG CODE
+displayed at left, make modifications to the MODIFIED
+CODE on the right to debug the code.
+*Enter Line Number and then code for the MODIFIED
+CODE.
+*MODIFIED CODE is live and changes with each update
+*Press S to submit the MODIFIED CODE. You get 5
+chances per question.
+*enter 0 anytime to SAVE and EXIT game

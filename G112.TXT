@@ -1,0 +1,28 @@
+1 fstream
+2 iomanip
+3 stdlib
+4 stdio
+5 dos
+6 conio
+setw
+2
+gettline
+6
+gets()
+4
+puts()
+4
+random()
+3
+read
+1
+exit()
+3
+delay()
+5
+atoi
+3
+sleep
+5
+write
+1

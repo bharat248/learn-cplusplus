@@ -1,0 +1,44 @@
+
+WRONG CODE
+include<iostream.h>
+#include<conio>
+void main()
+{
+int a=5
+++a
+cout<a++<;
+getch;
+}
+
+CORRECT CODE
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+int a=5;
+++a;
+cout<<a++;
+getch();
+}
+
+WRONG CODE
+#include<iostream.h>
+#define area=(a)=a*a;
+void mian()
+{
+clrscr;
+int y=area(5);
+cout<y+1<<hii;
+getch(;
+}
+
+CORRECT CODE
+#include<iostream.h>
+#define area(a) a*a
+void main()
+{
+clrscr();
+int y=area(5);
+cout<<y+1<<"hii";
+getch();
+}

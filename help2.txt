@@ -1,0 +1,8 @@
+GUESS  THE  FUNCTION  GAME
+
+*Take hint from the description of a function given
+ and try to guess the function hidden behind the
+ stars.
+*you get 5 chances per letter of function to guess
+*letter correctly guessed is made visible.
+*enter 0 anytime to SAVE and EXIT game
